@@ -44,7 +44,7 @@ class Transaction:
             Setiap Tuple harus terdiri dari 3 elemen yaitu:
                 - string : item yang ingin ditambahkan.
                 - int : banyak item yang ingin ditambahkan.
-                - int : harga stauan pada item yang ingin ditambahkan.
+                - int : harga satuan pada item yang ingin ditambahkan.
 
         Returns
         -------
