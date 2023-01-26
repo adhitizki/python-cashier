@@ -24,59 +24,59 @@ Libraries:
 2. Buka jupyter notebook atau IDE python dengan lokasi yang sama pada file main.py
 
 3. Import transaction class pada file main.py
-```
-from main import Transaction
-```
+    ```
+    from main import Transaction
+    ```
 
 4. Membuat instance dari Transaction class.
-```
-transaksi = Transaction()
-```
+    ```
+    transaksi = Transaction()
+    ```
 
 5. Untuk menambahkan item kedalam data transaksi, gunakan `add_item()` dengan cara mendefinisikan tuple yang terdiri (nama item, jumlah item, harga item) kedalam list.
-```
-items = [
-    ('Apel', 1, 10000),
-    ('Daging Sapi', 2, 150000),
-    ('Spatula', 1, 30000)
-]
-transaksi.add_item(items)
-```
+    ```
+    items = [
+        ('Apel', 1, 10000),
+        ('Daging Sapi', 2, 150000),
+        ('Spatula', 1, 30000)
+    ]
+    transaksi.add_item(items)
+    ```
 
 6. Jika ingin mengganti atau memperbarui nama item, gunakan `update_item_name()`. Dengan memasukkan nama item dan nama item terbaru.
-```
-transaksi.update_item_name('Apel', 'Apel Malang')
-```
+    ```
+    transaksi.update_item_name('Apel', 'Apel Malang')
+    ```
 
 7. Jika ingin mengganti atau memperbarui jumlah item, gunakan `update_item_qty()`. Dengan memasukkan nama item dan jumlah item terbaru.
-```
-transaksi.update_item_qty('Daging Sapi', 1)
-```
+    ```
+    transaksi.update_item_qty('Daging Sapi', 1)
+    ```
 
 8. Jika ingin mengganti atau memperbarui harga item, gunakan `update_item_price()`. Dengan memasukkan nama item dan harga item terbaru.
-```
-transaksi.update_item_price('Spatula', 25000)
-```
+    ```
+    transaksi.update_item_price('Spatula', 25000)
+    ```
 
 9. Jika ingin menghapus item pada transaksi, gunakan `delete_item()` dengan memasukkan nama item.
-```
-transaksi.delete_item('Apel Malang')
-```
+    ```
+    transaksi.delete_item('Apel Malang')
+    ```
 
 10. Jika ingin mengulangi kembali transaksi atau mengembalikan data transaksi ke setelan awal gunakan `reset_transaction()`
-```
-transaksi.reset_transaction()
-```
+    ```
+    transaksi.reset_transaction()
+    ```
 
 11. Ketika sudah melakukan transaksi maka perlu pengecekan pada daftar belanjaan untuk mengetahui terdapat masukkan yang salah atau tidak, terutama pada tipe data masukkan. Maka gunakan `check_order()`.
-```
-transaksi.check_order()
-```
+    ```
+    transaksi.check_order()
+    ```
 
 12. Ketika sudah mengecek dan ingin mengetahui total harga item pada transaksi gunakan `total_price()`. Dengan method tersebut sudah menerapkan kondisi untuk mendapat potongan harga.
-```
-transaksi.total_price()
-```
+    ```
+    transaksi.total_price()
+    ```
 
 # Penjelasan Code
 - Pada script *'main.py'* terdapat *class* bernama `Transaction` yang berfungsi untuk mencatat item pembelian oleh seorang pembeli. Pada *class* `Transaction` memiliki beberapa method diantaranya:
@@ -100,16 +100,16 @@ transaksi.total_price()
     <img src="img\libraries.svg" width="500"/>
 
 - Method `__init__()` berfungsi sebagai inisiasi pada *class* `Transaction` dengan memberikan *attribute* berupa data kosong dengan format *dict*. pada penyimpanan data memiliki struktur sebagai berikut:
-```
-{
-    'item' : {
-        'item' : str,
-        'jumlah_item' : int,
-        'harga_item' : int,
-        'total_harga' : int
+    ```
+    {
+        'item' : {
+            'item' : str,
+            'jumlah_item' : int,
+            'harga_item' : int,
+            'total_harga' : int
+        }
     }
-}
-```
+    ```
 - Dengan nama item digunakan sebagai *keys* pada penyimpanan tersebut sehingga saat ingin memanggil detail item maka pemanggilan data menggunakan nama item. Hal ini seperti SKU atau barcode pada database supermarket.
 
     <img src="img\method_init.svg" width="500"/>
