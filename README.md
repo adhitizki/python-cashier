@@ -188,3 +188,9 @@ transaksi.total_price()
 9. Total Keseluruhan Harga
 
     <img src="img\test_9_total.jpg" width="500"/>
+
+# Rangkuman dan Saran
+
+- Program mampu menjalankan tugas sistem kasir sederhana atau CRUD sederhana.
+- Dapat mengembangkan program lebih kompleks dengan menggunakan database sebagai penyimpanan serta `unique_id` menggunakan SKU atau *barcode* alih-alih menggunakan nama item.
+- Perbaikan lanjutan jika diketemukan `bug` dikemudian hari.
