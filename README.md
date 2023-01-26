@@ -3,10 +3,10 @@ Pada setiap pembelian atau transaksi perlu pelacakan item atau barang apa saja y
 
 # Tools
 Bahasa Pemograman:
-* Python
+* Python 3.9
 
 Libraries:
-* Tabulate
+* Tabulate 0.9.0
 * Regex
 
 # Requirements / Objectives
@@ -151,3 +151,40 @@ transaksi.total_price()
 - Method `total_price()` digunakan untuk menghitung harga keselurhan item pada data transaksi. pada method juga menerapkan potongan harga dengan kondisi tertentu. Proses tersebut dilakukan dengan melakukan looping pada batas harga yang mendapat potongan dan persentase harga yang dibayarkan. Jika memenuhi dengan batas harga maka akan menghitung harga setelah mendapat potongan dan looping akan berhenti.
 
     <img src="img\total_price.svg" width="500"/>
+
+# Hasil Test Case
+1. Memanggil Class
+
+    <img src="img\test_1_import.jpg" width="500"/>
+
+2. Menambahkan Item
+
+    <img src="img\test_2_add_item.jpg" width="500"/>
+
+3. Update Nama Item
+
+    <img src="img\test_3_update_item.jpg" width="500"/>
+
+4. Update Jumlah Item
+
+    <img src="img\test_4_update_qty.jpg" width="500"/>
+
+5. Update Harga Item
+
+    <img src="img\test_5_update_price.jpg" width="500"/>
+
+6. Hapus Item
+
+    <img src="img\test_6_delete_item.jpg" width="500"/>
+
+7. Reset Transaksi
+
+    <img src="img\test_7_reset.jpg" width="500"/>
+
+8. Check Order
+
+    <img src="img\test_8_check.jpg" width="500"/>
+
+9. Total Keseluruhan Harga
+
+    <img src="img\test_9_total.jpg" width="500"/>
